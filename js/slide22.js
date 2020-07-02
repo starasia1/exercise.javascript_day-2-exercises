@@ -1,7 +1,6 @@
-var number =0;
+let userInput;
+let userInputAsInteger;
 do {
-    number = prompt("Enter a number from 1 to 99");
-    if ((number > 0) && (number < 100)) {
-        console.log(number + " squared is: " + number*number);
-    }
-    } while (number < 0 || number > 100);
+    userInput = prompt("Enter a number between 0 and 100");
+    userInputAsInteger = parseInt(userInput);
+} while(!(userInputAsInteger > 0 && userInputAsInteger < 100))
